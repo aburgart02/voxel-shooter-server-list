@@ -4,6 +4,7 @@
   "description": "",
   "main": "build/app.js",
   "type": "module",
+  "_comment": "Deploy: node build/app.js",
   "scripts": {
     "build": "tsc",
     "start": "nodemon build/app.js",

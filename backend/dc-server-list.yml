@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest
+    command: redis-server
+    ports:
+      - "6379:6379"
+
+  server-list-backend:
+    image: cr.yandex/crpfcpvoap78esunmram/server-list-backend
+    ports:
+      - "8080:80"
+
+  server-list-frontend:
+    image: cr.yandex/crpfcpvoap78esunmram/server-list-frontend
+    ports:
+      - "80:3000"
+
