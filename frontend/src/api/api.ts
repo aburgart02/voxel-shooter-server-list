@@ -13,7 +13,7 @@ const ErrorTypes = {
     NOT_FOUND: 404
 } as const;
 
-export const BACKEND_URL = 'http://localhost:5000/'; //Deploy: 'http://84.201.153.121:8080/'
+export const BACKEND_URL = 'http://localhost:5000/'; //Deploy: process.env.REACT_APP_API_URL
 const REQUEST_TIMEOUT = 5000;
 
 export const createAPI = (): AxiosInstance => {

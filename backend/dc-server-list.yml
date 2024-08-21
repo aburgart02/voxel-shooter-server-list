@@ -16,4 +16,6 @@ services:
     image: cr.yandex/crpfcpvoap78esunmram/server-list-frontend
     ports:
       - "80:3000"
+    environment:
+      - REACT_APP_API_URL=url
 
